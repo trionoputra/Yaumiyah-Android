@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yondev.yaumiyah.SoundListActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linearLayout3">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:background="@drawable/list_state"
+                android:clickable="true"
+                >
+                <TextView
+                    android:layout_marginTop="32dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:textSize="18dp"
+                    android:text="@string/none" />
+
+                <Button
+                    android:id="@+id/button1"
+                    android:tag="none"
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="16dp"
+                    android:textSize="10dp"
+                    android:textColor="@color/colorPrimary"
+                    android:background="@drawable/btn_pilih"
+                    android:text="@string/pilih" />
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/abu_muda"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:background="@drawable/list_state"
+                android:id="@+id/listBismillah"
+                android:tag="bismillah"
+                android:clickable="true" >
+                <TextView
+                    android:layout_marginTop="32dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="16dp"
+                    android:text="@string/bismillah" />
+
+                <Button
+                    android:id="@+id/btnBismillah"
+                    android:tag="bismillah"
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="16dp"
+                    android:textSize="10dp"
+                    android:textColor="@color/colorPrimary"
+                    android:background="@drawable/btn_pilih"
+                    android:text="@string/pilih" />
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/abu_muda"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/list_state"
+                android:id="@+id/listAdzanMekkah"
+                android:tag="mekkah"
+                android:clickable="true" >
+                <TextView
+                    android:layout_marginTop="32dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="16dp"
+                    android:text="@string/adzan_mekkah" />
+                <Button
+                    android:id="@+id/btnAdzanMekkah"
+                    android:tag="mekkah"
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="16dp"
+                    android:textSize="10dp"
+                    android:textColor="@color/colorPrimary"
+                    android:background="@drawable/btn_pilih"
+                    android:text="@string/pilih" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/abu_muda"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/list_state"
+                android:id="@+id/listAdzanMadinah"
+                android:tag="madinah"
+                android:clickable="true" >
+                <TextView
+                    android:layout_marginTop="32dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="16dp"
+                    android:text="@string/adzan_madina" />
+
+                <Button
+                    android:id="@+id/btnAdzanMadinah"
+                    android:tag="madinah"
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="16dp"
+                    android:textSize="10dp"
+                    android:textColor="@color/colorPrimary"
+                    android:background="@drawable/btn_pilih"
+                    android:text="@string/pilih" />
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/abu_muda"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/list_state"
+                android:id="@+id/listAdzanMadinahFajr"
+                android:tag="madinah_fajr"
+                android:clickable="true" >
+                <TextView
+                    android:layout_marginTop="32dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="16dp"
+                    android:text="@string/adzan_madina_fajr" />
+
+                <Button
+                    android:id="@+id/btnAdzanMadinahFajr"
+                    android:tag="madinah_fajr"
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="16dp"
+                    android:textSize="10dp"
+                    android:textColor="@color/colorPrimary"
+                    android:background="@drawable/btn_pilih"
+                    android:text="@string/pilih" />
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/abu_muda"/>
+
+
+            <View
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/abu_muda"/>
+
+
+            <RelativeLayout
+                android:background="@color/putih"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textSize="10dp"
+                    android:layout_marginLeft="8dp"
+                    android:text="@string/sistem_ringtone" />
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/abu_muda"/>
+
+            <com.yondev.yaumiyah.widget.WrapListView
+                android:id="@+id/listView1"
+                android:divider="@color/abu_muda"
+                android:dividerHeight="0.5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

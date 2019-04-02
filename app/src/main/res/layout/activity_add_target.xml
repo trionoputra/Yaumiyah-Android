@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.yondev.yaumiyah.AddTargetActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_marginBottom="8dp"
+        android:layout_centerVertical="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/judul_target" />
+
+
+            <LinearLayout
+                android:id="@+id/judulWrapper"
+                android:layout_width="match_parent"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="4dp"
+                android:paddingTop="4dp"
+                android:layout_height="wrap_content" android:orientation="vertical">
+
+
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textSize="18dp"
+                    android:textColorHint="@color/abu_sedang"
+                    android:hint="@string/hint_judul"
+                    android:textColor="@color/abu_tua"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/TanggalWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical"
+                    android:paddingTop="4dp">
+
+                    <EditText
+                        android:id="@+id/editText2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:descendantFocusability="blocksDescendants"
+                        android:ems="10"
+                        android:focusable="false"
+                        android:focusableInTouchMode="true"
+                        android:hint="@string/tanggal_berapa"
+                        android:inputType="none"
+                        android:text=""
+                        android:textColor="@color/abu_tua"
+                        android:textColorHint="@color/abu_sedang"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@mipmap/ic_date_range_black_24dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/waktuWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:paddingTop="4dp"
+                    android:layout_height="wrap_content" android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/editText3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="none"
+                        android:textSize="18dp"
+                        android:textColorHint="@color/abu_sedang"
+                        android:hint="@string/jam_berapa"
+                        android:textColor="@color/abu_tua"
+                        android:focusable="false"
+                        android:focusableInTouchMode="true"
+                        android:descendantFocusability="blocksDescendants"
+                        android:text="" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@mipmap/ic_schedule_black_24dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/spinnerWrapper"
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:paddingTop="4dp"
+                    android:layout_height="wrap_content" android:orientation="vertical">
+
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:spinnerMode="dialog"
+                        android:background="@null" />
+
+                    <View
+                        android:layout_marginTop="6dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/abu_sedang"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="3dp"
+                    app:srcCompat="@mipmap/ic_keyboard_arrow_down_black_18dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/notifikasi"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14dp" />
+
+                <Switch
+                    android:id="@+id/switch1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:checked="true"
+                    android:text="" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/notifDetailWrapper"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="4dp"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="16dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/abu_tua"
+                        android:textSize="18dp"
+                        android:text="@string/vibrasi" />
+
+                    <Switch
+                        android:id="@+id/switch2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:checked="true"
+                        android:text="" />
+
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_marginTop="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/abu_sedang"/>
+
+                <LinearLayout android:layout_width="match_parent"
+                    android:id="@+id/suaraWrapper"
+                    android:layout_height="wrap_content" android:orientation="vertical">
+                    <TextView
+                        android:layout_marginTop="16dp"
+                        android:id="@+id/textView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/abu_tua"
+                        android:textSize="18dp"
+                        android:text="@string/suara_notifikasi" />
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/abu_sedang"
+                        android:textSize="12dp"
+                        android:text="@string/default_notifikasi" />
+                </LinearLayout>
+
+
+                <View
+                    android:layout_marginTop="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/abu_sedang"/>
+
+
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:spinnerMode="dialog"
+                    android:background="@null" />
+
+                <View
+                    android:layout_marginTop="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/abu_sedang"/>
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/pilih_lambang"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14dp" />
+
+                <com.yondev.yaumiyah.widget.FlowLayout
+                    android:id="@+id/lambangWrapper"
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="8dp"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:id="@+id/imgSalat"
+                        android:tag="ic_salat_default"
+                        android:clickable="true"
+                        android:background="@drawable/border_layout"
+                        >
+
+                        <ImageButton
+                            android:background="@null"
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:descendantFocusability="blocksDescendants"
+                            android:focusableInTouchMode="false"
+                            android:focusable="false"
+                            android:clickable="false"
+                            android:src="@drawable/btn_salat"/>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:id="@+id/imgQuran"
+                        android:tag="ic_quran_default"
+                        android:clickable="true"
+                        android:background="@drawable/border_layout"
+                        >
+
+                        <ImageButton
+                            android:background="@null"
+                            android:layout_width="wrap_content"
+                            android:layout_height="24dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:layout_centerInParent="true"
+                            android:descendantFocusability="blocksDescendants"
+                            android:focusableInTouchMode="false"
+                            android:focusable="false"
+                            android:clickable="false"
+                            android:src="@drawable/btn_quran"/>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:id="@+id/imgGive"
+                        android:tag="ic_give_default"
+                        android:clickable="true"
+                        android:background="@drawable/border_layout"
+                        >
+
+                        <ImageButton
+                            android:background="@null"
+                            android:layout_width="wrap_content"
+                            android:layout_height="24dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:layout_centerInParent="true"
+                            android:descendantFocusability="blocksDescendants"
+                            android:focusableInTouchMode="false"
+                            android:focusable="false"
+                            android:clickable="false"
+                            android:src="@drawable/btn_give"/>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/imgSaum"
+                        android:tag="ic_saum_default"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:clickable="true"
+                        android:background="@drawable/border_layout"
+                        >
+
+                        <ImageButton
+                            android:background="@null"
+                            android:layout_width="wrap_content"
+                            android:layout_height="24dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:layout_centerInParent="true"
+                            android:descendantFocusability="blocksDescendants"
+                            android:focusableInTouchMode="false"
+                            android:focusable="false"
+                            android:clickable="false"
+                            android:src="@drawable/btn_saum"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:id="@+id/imgQurban"
+                        android:tag="ic_qurban_default"
+                        android:clickable="true"
+                        android:background="@drawable/border_layout"
+                        >
+
+                        <ImageButton
+                            android:background="@null"
+                            android:layout_width="wrap_content"
+                            android:layout_height="24dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:layout_centerInParent="true"
+                            android:descendantFocusability="blocksDescendants"
+                            android:focusableInTouchMode="false"
+                            android:focusable="false"
+                            android:clickable="false"
+                            android:src="@drawable/btn_qurban"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="40dp"
+                        android:clickable="true"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:id="@+id/imgMosque"
+                        android:tag="ic_mosque_default"
+                        android:background="@drawable/border_layout"
+                        >
+                        <ImageButton
+                            android:background="@null"
+                            android:layout_width="wrap_content"
+                            android:layout_height="24dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:layout_marginRight="16dp"
+                            android:layout_centerInParent="true"
+                            android:descendantFocusability="blocksDescendants"
+                            android:focusableInTouchMode="false"
+                            android:focusable="false"
+                            android:clickable="false"
+                            android:src="@drawable/btn_mosque"/>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:id="@+id/imgSilaturahim"
+                        android:tag="ic_silaturahim_default"
+                        android:clickable="true"
+                        android:background="@drawable/border_layout"
+                        >
+
+                        <ImageButton
+                            android:background="@null"
+                            android:layout_width="wrap_content"
+                            android:layout_height="24dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:layout_centerInParent="true"
+                            android:descendantFocusability="blocksDescendants"
+                            android:focusableInTouchMode="false"
+                            android:focusable="false"
+                            android:clickable="false"
+                            android:src="@drawable/btn_silaturahim"/>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:id="@+id/imgKaaba"
+                        android:tag="ic_kaaba_default"
+                        android:clickable="true"
+                        android:background="@drawable/border_layout"
+                        >
+                        <ImageButton
+                            android:background="@null"
+                            android:layout_width="wrap_content"
+                            android:layout_height="24dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:layout_centerInParent="true"
+                            android:descendantFocusability="blocksDescendants"
+                            android:focusableInTouchMode="false"
+                            android:focusable="false"
+                            android:clickable="false"
+                            android:src="@drawable/btn_kaaba"/>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:id="@+id/imgSmile"
+                        android:tag="ic_smile_default"
+                        android:clickable="true"
+                        android:background="@drawable/border_layout"
+                        >
+                        <ImageButton
+                            android:background="@null"
+                            android:layout_width="wrap_content"
+                            android:layout_height="24dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:layout_marginRight="16dp"
+                            android:layout_centerInParent="true"
+                            android:descendantFocusability="blocksDescendants"
+                            android:focusableInTouchMode="false"
+                            android:focusable="false"
+                            android:clickable="false"
+                            android:src="@drawable/btn_smile"/>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:id="@+id/imgTarget"
+                        android:tag="ic_target_default"
+                        android:clickable="true"
+                        android:background="@drawable/border_layout"
+                        >
+
+                        <ImageButton
+                            android:layout_centerInParent="true"
+                            android:background="@null"
+                            android:layout_width="wrap_content"
+                            android:layout_height="24dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:descendantFocusability="blocksDescendants"
+                            android:focusableInTouchMode="false"
+                            android:focusable="false"
+                            android:clickable="false"
+                            android:src="@drawable/btn_target"/>
+
+                    </RelativeLayout>
+
+                </com.yondev.yaumiyah.widget.FlowLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout2">
+
+
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/abu_sedang"
+            android:layout_marginBottom="8dp"
+            android:stateListAnimator="@null"
+            android:background="@drawable/icon_state"
+            android:text="@string/cancel" />
+
+        <Button
+            android:id="@+id/btnBuat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginBottom="8dp"
+            android:stateListAnimator="@null"
+            android:background="@drawable/icon_state"
+            android:text="@string/simpan" />
+    </LinearLayout>
+
+
+</RelativeLayout>

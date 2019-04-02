@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">Yaumiyah</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="quote">(Allah) Yang menjadikan mati dan hidup supaya Dia menguji kamu, siapa diantara kamu yang lebih baik amalnya. Dan Dia Maha Perkasa lagi Maha Pengampun. \nQ.S. Al Mulk : 2</string>
+    <string name="hari_ini">Hari ini</string>
+    <string name="rekap_konsistensi">Rekap Konsistensi</string>
+    <string name="pengaturan">Pengaturan</string>
+    <string name="mulai">MULAI</string>
+    <string name="add">TAMBAH</string>
+    <string name="rencanakan_ramalan_anda">Rencanakan amalan anda</string>
+    <string name="salah_satu_kunci_sukses">Salah Satu kunci kesuksesan anda adalah fokus dan konsisten</string>
+    <string name="buat_target_baru">Buat target baru</string>
+    <string name="simpan">SIMPAN</string>
+    <string name="cancel">CANCEL</string>
+    <string name="judul_target">Amal apa yang akan dilakukan</string>
+    <string name="hint_judul">Input judul</string>
+    <string name="waktu">Waktu</string>
+    <string name="pengulangan">Pengulangan</string>
+    <string name="notifikasi">Notifikasi</string>
+    <string name="pilih_lambang">Pilih lambang</string>
+    <string name="isi_judul">isi judul</string>
+    <string name="isi_tanggal">isi tanggal</string>
+    <string name="isi_jam">isi jam</string>
+    <string name="ok">OK</string>
+    <string name="undo">UNDO</string>
+    <string name="yakin">Yakin ingin hapus?</string>
+    <string name="note_wajib">Khusus Shalat 5 waktu hanya bisa ON/OFF kan notifikasi</string>
+    <string name="salam">Assalamualaikum</string>
+    <string name="daftar_rencana">Daftar Rencana</string>
+    <string name="tanggal_berapa">Kapan akan dilakukan?</string>
+    <string name="jam_berapa">Jam berapa?</string>
+
+    <string name="sabtu">S</string>
+    <string name="minggu">M</string>
+    <string name="senin">S</string>
+    <string name="selasa">S</string>
+    <string name="rabu">R</string>
+    <string name="kamis">K</string>
+    <string name="jumat">J</string>
+
+    <string name="vibrasi">Vibrasi</string>
+    <string name="suara_notifikasi">Suara Notifikasi</string>
+    <string name="default_notifikasi">default notifkasi</string>
+    <string name="waktu_berbunyi">Waktu Berbunyi</string>
+    <string name="tepat_waktu">Tepat Waktu</string>
+    <string name="title_activity_sound_list">SoundListActivity</string>
+
+    <string name="hanya_sekali">Hanya Sekali</string>
+    <string name="setiap_hari">Setiap Hari</string>
+    <string name="seminggu_sekali">Seminggu Sekali</string>
+    <string name="sebulan_sekali">Sebulan Sekali</string>
+    <string name="setahun_sekali">Setahun Sekali</string>
+
+    <string name="lima_menit">5 Menit Sebelum</string>
+    <string name="sepuluh_menit">10 Menit Sebelum</string>
+    <string name="limabelas_menit">15 Menit Sebelum</string>
+
+    <string name="belum_ada_rencana">belum ada rencana hari ini?</string>
+    <string name="tambah_rencana">Tambah rencana</string>
+
+    <string name="none">None</string>
+    <string name="pilih">pilih</string>
+    <string name="bismillah">Bismillah</string>
+    <string name="istiadzah">Isti\'adzah</string>
+    <string name="adzan_mekkah">Adzan Mekkah</string>
+    <string name="adzan_mekkah_fajr">Adzan Mekkah Fajr</string>
+    <string name="adzan_madina">Adzan Madinah</string>
+    <string name="adzan_madina_fajr">Adzan Madinah Fajr</string>
+
+    <string name="sistem_ringtone">System ringtones</string>
+</resources>
