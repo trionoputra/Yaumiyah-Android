@@ -1,6 +1,6 @@
 # Yaumiyah Android
 
-<b>Unfinished</b> Moslem Daily worship evalution app for android project
+<b>Unfinished</b> Moslem Daily Worship Evalution App for Android project
 
 Yaumiyah atau Mutaba’ah Yaumiyah adalah kegiatan evaluasi amal sehari – hari kita baik wajib maupun sunnah.
 Aplikasi isi dibuat sebagai list dan reminder ibadah seorang muslim dan juga sebagai evaluasi ibadah harian,mingguan maupun bulanan.
